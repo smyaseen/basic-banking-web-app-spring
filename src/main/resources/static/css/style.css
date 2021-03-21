@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    font-family: Arial;
+}
+
+.bgimg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+td, th {
+    text-align: center !important;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd !important;
+}
+
+tr:nth-child(odd) {
+    background-color: #F2F3F4 !important;
+}
+
+td {
+    border: 2px solid black !important;
+}
+
+h1,h2,h3 {
+    display: inline;
+    color: black;
+    background-color: sandybrown;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.middle {
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+hr {
+    margin: 6px;
+    width: 100%;
+}

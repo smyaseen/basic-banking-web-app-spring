@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: header">
+</head>
+<body>
+
+<nav th:replace="layouts :: navbar"></nav>
+
+<style>
+    .bgimg {
+        background-image: url('/img/theImage.jpg');
+    }
+</style>
+
+<div class="bgimg">
+    <div class="middle">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th>Transfer From Id</th>
+                <th>Transfer From Name</th>
+                <th>Transfer To Id</th>
+                <th>Transfer To Name</th>
+                <th>Transferred Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="aTransaction : ${transactions}">
+                <td th:text="${aTransaction.customerIdFrom}">
+                <td th:text="${aTransaction.nameTransferFrom}">
+                <td th:text="${aTransaction.customerIdTo}">
+                <td th:text="${aTransaction.nameTransferTo}">
+                <td th:text="${aTransaction.transferAmount}">
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
